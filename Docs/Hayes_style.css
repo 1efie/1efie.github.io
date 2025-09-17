@@ -36,6 +36,7 @@ h1 { font-size: 2rem; margin: var(--space-1) 0 0; color: var(--verydark); text-a
 h2 { font-size: 1.5rem; margin: var(--space-4) 0 var(--space-2); color: var(--verydark); }
 p  { margin: 0 0 var(--space-2); line-height: 1.6; }
 a:visited { color: var(--verydark); }
+p a:hover { background: var(--sage); }
 
 /*Sections*/
 section  { border-radius: var(--radius); }
