@@ -1,7 +1,10 @@
 :root{
   /*Palette*/
-  --lightsage: #e0ebe2;        /* page background */
+  --white: #eff5f0;       /* header bg color */
+  --lightsage: #e0ebe2;   /* page background */
   --darksage: #54785a;    /* default text color */
+  --sage: #c1d7c5;        /* hover color */
+  --verydark: #3f5a43;    /* header text color */
   
   /*Layout*/
   --page-width: 60ch;
@@ -19,4 +22,46 @@ html { font-family: Georgia, serif }
 body { margin: 0; color: var(--darksage); background: var(--lightsage); }
 img  { max-width: 100%; height: auto; display: block; }
 
-/*Nav*/
+/*Layout*/
+main   { max-width: var(--page-width); margin: 0 auto; padding: var(--space-3); }
+header { position: sticky; top: 0; background: var(--white); border-bottom: 2px solid var(--sage); padding: var(--space-1); }
+
+/*Navi*/
+nav { display: flex; gap: var(--space-2); justify-content: center; padding: calc(var(--lightsage) * 0.75) 0; }
+nav a { padding: 0.25rem 0.5rem; border-radius: 6px; color: var(--darksage); text-decoration: none; }
+nav a:hover { background: var(--sage); }
+
+/*Typography*/
+h1 { font-size: 2rem; margin: var(--space-1) 0 0; color: var(--verydark); text-align: center; }
+h2 { font-size: 1.5rem; margin: var(--space-4) 0 var(--space-2); color: var(--verydark); }
+p  { margin: 0 0 var(--space-2); line-height: 1.6; }
+a:visited { color: var(--verydark); }
+
+/*Sections*/
+section  { border-radius: var(--radius); }
+#about      { background: var(--white);  }
+#interests  { background: var(--white);  }
+#github     { background: var(--white);  }
+#yuzu       { background: var(--white);  }
+
+/*Section Backgrounds*/
+#about, #interests, #github, #yuzu {
+  margin: 15px;
+  padding: 30px 50px;
+  background: var(--white);
+  border: 2px solid var(--sage);
+  border-radius: 20px;
+}
+
+/*Link colors*/
+a:link { color: var(--verydark); }    /*unvisited links*/
+a:active { color: var(--lightsage)}   /*color links become when clicked*/
+
+/*Footer*/
+footer {
+  text-align: center;
+  background: var(--white);
+  padding: var(--space-2);
+  color: var(--darksage);
+  border-top: 2px solid var(--sage);
+}
