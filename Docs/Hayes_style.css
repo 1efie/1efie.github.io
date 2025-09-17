@@ -1,0 +1,22 @@
+:root{
+  /*Palette*/
+  --lightsage: #e0ebe2;        /* page background */
+  --darksage: #54785a;    /* default text color */
+  
+  /*Layout*/
+  --page-width: 60ch;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  
+  /*Rounding*/
+  --radius: 12px;
+}
+
+/*Base*/
+html { font-family: Georgia, serif }
+body { margin: 0; color: var(--darksage); background: var(--lightsage); }
+img  { max-width: 100%; height: auto; display: block; }
+
+/*Nav*/
