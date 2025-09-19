@@ -57,6 +57,7 @@ section  { border-radius: var(--radius); }
 
 /*Section Backgrounds*/
 #about, #interests, #github, #yuzu {
+  scroll-margin-top: 60px; /* height of header */
   margin: 15px;
   padding: 30px 50px;
   background: var(--white);
