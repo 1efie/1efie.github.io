@@ -34,7 +34,7 @@ header { position: sticky; top: 0; background: var(--white); border-bottom: 2px 
 /*Navi*/
 nav { display: flex; gap: var(--space-2); justify-content: center; padding: calc(var(--lightsage) * 0.75) 0; }
 nav a { padding: 0.25rem 0.5rem; border-radius: 6px; color: var(--darksage); text-decoration: none; }
-nav a:hover { background: var(--sage); }
+nav a:hover { background: var(--sage); transition-duration: 0.3s; }
 
 /*Typography*/
 h1 { font-size: 2rem; margin: var(--space-1) 0 0; color: var(--verydark); text-align: center; }
@@ -73,6 +73,18 @@ footer {
 }
 
 /*Buttons*/
-.button1 { border-radius: 8px;
-
+.button1 { 
+  padding: 8px 10px;
+  border-radius: 8px;
+  background-color: var(--darksage);
+  color: var(--lightsage);
+  border: 2px solid var(--verydark);
+  font-family: Georgia, serif;
+  transition-duration: 0.4s; 
+} 
+.button1:hover {
+  background-color: var(--sage);
+  color: var(--verydark); 
 }
+
+
