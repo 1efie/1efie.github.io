@@ -8,47 +8,52 @@
     <meta name="description" content="Personal homepage for Lexie Hayes">
     <link rel="stylesheet" href="Hayes_style.css">
   </head>
-<body>
-  <a id="top"></a> <!-- back-to-top anchor -->
-  <header>
-    <h1>⋆.˚Lexie's Mini Site₊⊹</h1>
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#interests">Interests</a>
-      <a href="#github">Github</a>
-      <a href="#yuzu">My Cat</a>
-    </nav>
-  </header>
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-        <p>My name is Lexie Hayes and I am an undergraduate student at the University of Kentucky studying Linguistics and Japanese.</p>
-        <p>After I graduate in May 2026, I plan to persue a master's degree in Communication Disorders at Eastern Kentucky University.</p>
-        <p>My <em>ultimate</em> goal is to be a Speech Language Pathologist (SLP).</p>
-    </section>
-    
-    <section id="interests">
-      <h2>Some things I like:</h2>
-      <ul>
-        <li>My cat</li>
-        <li>The gym</li>
-        <li>Linguistics!</li>
-      </ul>
-    </section>
-    
-    <section id="github">
-      <h2>Github</h2>
-        <p><a href="https://github.com/1efie">Here</a> is a link to my Github.</p>
-    </section>
-    
-    <section id="yuzu">
-      <h2>My Cat</h2>
-        <p>Here's a picture of my cat, <strong>Yuzu</strong>, just because I feel like she deserves a shoutout.</p>
-        <p><img src="Yuzu.jpg" width="300"></p>
-    </section>
-  </main>
-  <footer>
-    © 2025 Lexie Hayes · <a href="#top">Back to top</a>
-  </footer>
-</body>
+  <body>
+    <a id="top"></a> <!-- back-to-top anchor -->
+    <header>
+      <h1>⋆.˚Lexie's Mini Site₊⊹</h1>
+      <nav>
+        <a href="#about">About Me</a>
+        <a href="#interests">Interests</a>
+        <a href="#github">Github</a>
+        <a href="#yuzu">My Cat</a>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+          <p>My name is Lexie Hayes and I am an undergraduate student at the University of Kentucky studying Linguistics and Japanese.</p>
+          <p>After I graduate in May 2026, I plan to persue a master's degree in Communication Disorders at Eastern Kentucky University.</p>
+          <p>My <em>ultimate</em> goal is to be a Speech Language Pathologist (SLP).</p>
+      </section>
+      
+      <section id="interests">
+        <h2>Some things I like:</h2>
+        <ul>
+          <li>My cat</li>
+          <li>The gym</li>
+          <li>Linguistics!</li>
+        </ul>
+      </section>
+      
+      <section id="github">
+        <h2>Github</h2>
+          <p><a href="https://github.com/1efie">Here</a> is a link to my Github.</p>
+      </section>
+      
+      <section id="yuzu">
+        <h2>My Cat</h2>
+          <p>Here's a picture of my cat, <strong>Yuzu</strong>, just because I feel like she deserves a shoutout.</p>
+          <p><img src="Yuzu.jpg" width="300"></p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; <span id="year"></span> Lexie Hayes</p>
+      <a href="#top">Back to top</a>
+    </footer>
+    <script>
+    const yearSpan = document.getElementById("year");
+    yearSpan.textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
