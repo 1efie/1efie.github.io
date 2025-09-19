@@ -18,8 +18,13 @@
 }
 
 .dark-mode {
-background-color: #3f5a43;
-color: #54785a;
+  background-color: var(--verydark);
+  color: var(--lightsage);
+}
+
+.dark-mode:header {
+  background: var(verydark);
+  
 }
 
 /*Base*/
