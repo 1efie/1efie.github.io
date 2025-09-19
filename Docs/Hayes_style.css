@@ -17,6 +17,11 @@
   --radius: 12px;
 }
 
+.dark-mode {
+background-color: #3f5a43;
+color: #54785a;
+}
+
 /*Base*/
 html { font-family: Georgia, serif }
 body { margin: 0; color: var(--darksage); background: var(--lightsage); }
@@ -50,7 +55,7 @@ section  { border-radius: var(--radius); }
   margin: 15px;
   padding: 30px 50px;
   background: var(--white);
-  border: 2px solid var(--sage);
+  border: 2px solid var(--sage); 
   border-radius: 20px;
 }
 
@@ -65,4 +70,9 @@ footer {
   padding: var(--space-2);
   color: var(--darksage);
   border-top: 2px solid var(--sage);
+}
+
+/*Buttons*/
+.button1 { border-radius: 8px;
+
 }

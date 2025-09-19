@@ -50,10 +50,19 @@
     <footer>
       <p>&copy; <span id="year"></span> Lexie Hayes</p>
       <a href="#top">Back to top</a>
+      <script>
+        const yearSpan = document.getElementById("year");
+        yearSpan.textContent = new Date().getFullYear();
+      </script>
+        <p>
+        </p>
+        <button class="button1" onclick="myFunction()">Toggle dark mode</button>
+          <script>
+          function myFunction() {
+             var element = document.body;
+             element.classList.toggle("dark-mode");
+          }
+          </script>
     </footer>
-    <script>
-    const yearSpan = document.getElementById("year");
-    yearSpan.textContent = new Date().getFullYear();
-    </script>
   </body>
 </html>
